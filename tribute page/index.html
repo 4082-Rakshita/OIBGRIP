@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TRIBUTE-PAGE</title>
+</head>
+<body>
+    <h1>Mahendra Singh Dhoni (Mahi)</h1>
+    <h2>(Captain Cool)</h2>
+    <div id="slideshow-example" data-component="slideshow">
+        <div role="list">
+            <div class="slide">
+                <img src="20071.jpg" alt="" style="width:100% ;height:600px;">
+            </div>
+            <div class="slide">
+                <img src="chennai-super-kings-winner-2021.jpg" alt="" style="width:100% ;height:600px;">
+            </div>
+            <div class="slide">
+                <img src="India-2011-World-Cup.jpg" alt="" style="width:100% ;height:600px;">
+            </div>
+            <div class="slide">
+                <img src="msd.webp" alt="" style="width:100% ;height:600px">
+            </div>
+        </div>
+    </div>
+    
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+    </div>
+    
+    <div class="image">
+        <h1>M.S Dhoni</h1>
+        <div class="intro">
+            <img class ="one"src="dhoni_3.jpg" alt="">
+            <p class="name">
+                Mahendra Singh Dhoni was born on July 7, 1981 at Ranchi, Jharkhand located in the east corner of India. 
+                He studied at DAV Jawahar Vidya Mandir where he was keenly interested in football and badminton.
+               He was the goalkeeper of his football team and was able to play for the district and state level.
+               But on the insistence of his football coach, he tried out to play cricket.
+                He was able to perform wicket keeping especially well which allowed him entry into a local cricket club called the Commando cricket club where he played from 1995-1998.
+                In the 1997/98 season, his superb performances in the Vinoo Mankad Under-16 Championship attracted the selector’s eye.
+            </p>
+        </div>
+        <hr>
+
+            <div class="about">
+                <img class="two" src="d3.jpg" alt="">
+            <p class="container">
+              An attacking right-handed middle-order batsman and wicket-keeper, he is widely regarded as one of the greatest finishers in limited-overs cricket. 
+              He made his One Day International (ODI) debut in December 2004 against Bangladesh, and played his first Test a year later against Sri Lanka. 
+              Dhoni holds numerous captaincy records such as most wins by an Indian captain in Tests and ODIs, and most back-to-back wins by an Indian captain in ODIs.
+            </p>
+        </div>
+
+    <hr>
+        <h1>Personal Life</h1>
+     <div class="family">
+        <img class= "three" src="family.jpg" alt="" style="float:left;margin-right: 10px; width: 500px; height: 300px;">
+    <p class="fam">
+        MS Dhoni comes from a typical family. His father Pan Singh, worked for MECON and his mother Devki <br>
+         Devi is a housewife. He has an elder brother, Narendra Singh Dhoni, who is a politician, and a sister, <br>
+         Jayanti Gupta, who is a  In 2010, Mahi married Sakshi, his childhood sweetheart. Sakshi was his <br>
+        classmate in his school, and she was then studying Hotel Management in Kolkata.In February of 2015, <br>
+        the couple welcomed a baby girl named Ziva.
+    </p>
+</div>
+<hr>
+
+<h1>Achievement</h1>
+<div class="achieve">
+    <img class="four" src="d4.jpg" alt="">
+  <ul>
+    <p  > Under his captaincy, India </p>
+    <li>Won the ICC T20 World Cup.</li>
+   <li>Won the ICC ODI World Cup.</li>
+    <li>Held the numero uno position in Test ranking for 18 months.</li>
+    <li>Won ICC Champions Trophy.</li>
+   <br>
+<p>Took Chennai Super Kings to </p>
+       <li> Championship title in 2010 & 2011 edition of IPL.</li>
+       <li> Championship title in 2010 & 2014 edition of Champions Leage Twenty20.</li>
+       <li>Championship title in 2018 edition of IPL.</li>
+       <li>Championship title in 2021 edition of IPL.</li>
+    </ul>
+</div> 
+<hr>  
+   <h3>GALLERY</h3>
+    <div class="zoom">
+        <img class ="image1" src="g1.jpeg" alt="" style="width: 33%; height: 30%;">
+        <img class ="image2" src="g3.jpg" alt=""style="width: 50%; height: 30%;">
+        <img class ="image3" src="g6.jpg" alt=""style="width: 30%; height: 30%;">
+        <img class ="image4" src="g7.jpg" alt=""style="width: 20; height: 30%;">
+        <img class ="image5" src="g8.jpg" alt=""style="width: 30%; height: 30%;">
+    </div>
+<hr>
+<h2>Thank you,MS Dhoni-Forever Captain Cool </h2>
+    <div class="tribute">
+        <img class="trib" src="mmsd.jpg" alt="" >
+        
+    </div>
+</div>
+
+
+
+<script >
+    var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+slideshows.forEach(initSlideShow);
+
+function initSlideShow(slideshow) {
+
+	var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+
+	var index = 0, time = 1000;
+	slides[index].classList.add('active');
+
+	setInterval( () => {
+		slides[index].classList.remove('active');
+		
+		index++;
+		if (index === slides.length) index = 0;
+
+		slides[index].classList.add('active');
+
+	}, time);
+}
+  </script>
+</body>
+</html> 

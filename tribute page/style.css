@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.image{
+    margin: 24px;
+    padding: 24px;
+}
+.slideshow-example{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    
+}
+h2{
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.zoom{
+    margin: 5px;
+    padding-left: 160px;
+}
+.intro ,.about ,.family, .achieve,.tribute{
+    display: flex;
+    font-size: 18px;
+    margin: 25px;
+    text-align: justify;
+}
+
+ .one{
+    float:left;margin-right: 10px; width: 1000px; height: 400px;
+    
+}
+.two{
+        float:right;margin-right: 10px; width: 500px; height: 300px;
+        
+        }
+.three{
+    float:left;margin-right: 10px; width: 500px; height: 300px;
+    
+    }
+.four{
+        float:right;margin-right: 10px; width: 500px; height: 400px;
+        
+        }
+.trib{
+    
+   align-items: center;
+   margin-left: 310px;
+    width: 700px; 
+    height: 500px;
+}
